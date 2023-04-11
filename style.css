@@ -1,0 +1,458 @@
+* {
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    min-height: 200vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 0.1rem solid rgb(69, 168, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    font-style: italic;
+}
+
+.navbar-logo span {
+    color: rgb(69, 168, 255);
+}
+
+.navbar-extra {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.navbar-extra img {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+}
+
+.navbar-extra img:hover {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    transition: linear 0.2s;
+}
+
+.navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0.5rem;
+}
+
+.navbar-nav a:hover {
+    color: white;
+    font-style: italic;
+}
+
+.navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid rgb(69, 168, 255);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.navbar-nav a:hover::after {
+    transform: scaleX(0.7);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.hamburger a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger a:hover {
+    color: rgb(69, 168, 255);
+    transition: linear 0.2s;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(https://c4.wallpaperflare.com/wallpaper/695/331/660/digital-art-artwork-women-cityscape-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 3%, rgba(255, 255, 255, 0)25%);
+}
+
+.content a {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: black;
+}
+
+.content h1 {
+    margin-left: 1rem;
+}
+
+.content p {
+    margin-left: 1rem;
+}
+
+.About {
+    padding: 5rem 5% 1.4rem;
+}
+
+.About h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.img {
+    width: 700px;
+    height: 400px;
+    margin-left: 2rem;
+}
+
+.About h2 span {
+    color: rgb(69, 168, 255);
+}
+
+.roww {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.roww h3 {
+    margin: 10px;
+    font-weight: 300;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+.VisiMisi {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.visi {
+    width: 50%;
+}
+
+.visi h2 {
+    color: rgb(69, 168, 255);
+}
+
+.visi h5 {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.misi {
+    margin-left: 10px;
+}
+
+.misi h2 {
+    text-align: center;
+}
+
+.misi ul li {
+    list-style-type: decimal;
+}
+
+.LatarBelakang {
+    margin: 12rem 5rem;
+    text-transform: capitalize;
+}
+
+.LatarBelakang span {
+    color: rgb(69, 168, 255);
+}
+
+.LatarBelakang h2 {
+    text-align: center;
+}
+
+.parent {
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+
+.parent h2 {
+    text-align: center;
+}
+
+.parent span {
+    color: rgb(69, 168, 255);
+}
+
+.gambar {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 3rem 0;
+}
+
+.gambar img {
+    height: 150px;
+    width: 150px;
+    border-radius: px;
+}
+
+.Anggota-card {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive bar */
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+/* Handphone */
+@media (max-width: 450px) {
+    html {
+        font-size: 65%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: black;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.2s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar-nav a {
+        display: block;
+        margin: 1rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+    }
+
+    .gambar {
+        display: block;
+        margin-top: 5%;
+    }
+
+    .Anggota-card {
+        margin-top: 5%;
+    }
+
+    .VisiMisi {
+        display: block;
+    }
+
+    .visi {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .misi {
+        width: 100%;
+    }
+
+    .About {
+        display: block;
+    }
+
+    .roww {
+        display: block;
+        text-align: center;
+    }
+
+    .img {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+/* Footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+iframe {
+    max-width: 90%;
+    max-height: min-content;
+}
+
+* {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 40px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    z-index: 999;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #33969f;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
